@@ -1,0 +1,599 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&family=Faster+One&family=Fontdiner+Swanky&family=Frijole&family=Monoton&family=Nosifer&family=Parisienne&family=Press+Start+2P&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.95em;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: rgb(41, 38, 38);
+  box-shadow: inset 1px 0 2px rgb(255, 255, 255);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(94, 168, 94) ,rgb(143, 141, 141) );
+  box-shadow: inset 1px 0 2px rgb(255, 255, 255);
+  scroll-behavior: smooth;
+  border-radius: 8px;
+}
+
+
+/****************************************
+ Start Navbar section
+*****************************************/
+.brandName {
+  font-size: 30px;
+  font-family: 'Fontdiner Swanky', cursive;
+}
+
+.brandName::first-letter {
+  font-size: 46px;
+}
+
+.navbar-nav {
+  margin: 0 3px 0 4px;
+}
+
+.navbar-brand {
+  position: relative;
+  transform: rotate(-2deg);
+  top: 8px;
+}
+
+li {
+  height: 45px;
+}
+
+.main-nav .active {
+  border-radius: 5px;
+  background-color: rgb(15, 158, 39) !important;
+}
+
+.navbar .nav-item:hover:not(.active) {
+  transition: .7s ease;
+  border-bottom: 1px solid white;
+}
+.carousel-indicators .active:not(.carousel-item) {
+  border-radius: 5px;
+  background-color: rgb(15, 158, 39) !important;
+}
+
+.nav-link  {
+  padding: 10px !important;
+  letter-spacing: 2px;
+  margin-right: 9px;
+  color: white !important;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.fas {
+  color: white;
+}
+
+.fab {
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+.fab:hover {
+  cursor: pointer;
+}
+
+button {
+  outline: 0 !important;
+}
+
+.cart-area {
+  height: 234px;
+  background-color: rgb(221, 250, 245) !important;
+  border-radius: 8px;
+}
+
+.cart {
+  position: relative;
+  top: -9px;
+  width: 200px;
+  height: auto;
+  color: white;
+}
+
+.fa-caret-up {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  font-size: 25px;
+  color: rgb(47, 136, 195) !important;
+}
+
+.cart-body {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  height: 90px;
+}
+
+.cart-title {
+  width: 100%;
+  height: auto;
+  background-color: rgb(47, 136, 195) !important;
+  border-radius: 4px 4px 0 0;
+}
+
+.cart-footer {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.cart-footer button {
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(29, 184, 29);
+  color: rgb(0, 0, 0);
+}
+
+.cart-footer button:hover {
+  background-color: rgb(71, 241, 71);
+  box-shadow: inset 0px 0px 10px rgb(119, 119, 119);
+}
+
+.loginBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/main2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/****************************************
+ End Navbar section
+*****************************************/
+
+/****************************************
+ Start Carousel section
+*****************************************/
+.carousel-text-sect {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel-indicators li {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 60%  0 60% 60%  !important;
+}
+
+.carousel-text-sect .carousel-text p {
+  width: 500px;
+  word-break: keep-all;
+  font-size: 20px;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 800px;
+  color: rgb(0, 0, 0); 
+}
+
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/slider-02.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.carousel-span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #2fc71b;
+}
+
+.fa-arrow-alt-circle-right,
+.fa-arrow-alt-circle-left {
+  color: rgb(5, 0, 0);
+}
+
+.carousel-text button {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  font-size: 50px;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+} 
+
+.carousel-text button:hover {
+  background-color: black;
+  color: white;
+}
+
+/****************************************
+ End Carousel section
+*****************************************/
+
+main {
+  position: relative;
+}
+
+/****************************************
+ Start Cards section
+*****************************************/
+.cards-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 3fr 4fr 3fr;
+  column-gap: 14px;
+}
+
+.card-type,
+.cards-title,
+.price {
+  font-weight: bold;
+  color: #3093cc;
+}
+
+.copper,
+.bronze,
+.silver {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 6px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 8px rgb(148, 148, 209);
+}
+
+.bronze {
+  position: relative;
+  top: -20px;
+}
+
+.bronze-up {
+  position: relative;
+  top: -50px;
+}
+
+.popular {
+  position: relative;
+  width: 200px;
+  height:70px;
+  left: -80px;
+  top: 28px;
+  background-color: #3093cc;
+  color: white;
+  transform: rotate(-45deg);
+}
+
+.popular h6 {
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+
+
+.copper:hover,
+.bronze:hover,
+.silver:hover {
+  box-shadow: 0 0 20px rgb(144, 180, 180);
+  transform: scale(1.01);
+  transition: all 0.2s ease-in;
+}
+
+.card-btn {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(29, 184, 29);
+  color: rgb(0, 0, 0);
+}
+
+.card-btn:hover {
+  background-color: rgb(35, 197, 35);
+  box-shadow: inset 0px 0px 15px rgb(119, 119, 119);
+  color: white;
+}
+/****************************************
+ End Cards section
+*****************************************/
+
+/****************************************
+ Start Support section
+*****************************************/
+.support {
+  display: flex;
+  flex-direction: column;
+}
+
+.support img {
+  max-width: 120px;
+  height: auto;
+}
+
+.support {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  column-gap: 20px;
+}
+
+.support p {
+  overflow-wrap: break-word;
+}
+
+.support-item {
+  position: relative;
+  background-color: white;
+  border-left: 1px solid rgb(231, 231, 231);
+  border-right: 1px solid rgb(231, 231, 231);
+  border-top: 1px solid rgb(231, 231, 231);
+}
+
+.support-item:before, .support-item:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 25px 15px #777;
+  -webkit-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+.support-item:after {
+  -webkit-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+/****************************************
+ End Support section
+*****************************************/
+
+/****************************************
+ Start Footer section
+*****************************************/
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: white;
+  background-color: rgb(18, 31, 31);
+  /*\
+  background-image: url(/img/12.png);
+  background-size: cover;
+  background-attachment: local;
+  background-position: center; */
+}
+
+.footer-item button {
+  background-color: rgb(18, 31, 31);
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid green;
+  color: white;
+}
+
+.footer-item button:hover {
+  background-color: rgb(19, 156, 19);
+  box-shadow: inset 0 0 15px rgb(61, 61, 61);
+}
+
+.copy-divider {
+  background-color: rgb(18, 31, 31);
+}
+
+.divider-line {
+  height: 2px;
+  background-color: white;
+}
+
+.copy {
+  color: white;
+}
+/****************************************
+ End Footer section
+*****************************************/
+
+/****************************************
+ Start @media queries section
+*****************************************/
+@media screen and (max-width: 992px) {
+  .carousel-text-sect {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    row-gap: 55px;
+  }
+
+  .carousel-text-sect .carousel-text p {
+    width: 300px;
+    word-break: keep-all;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .cards,
+  .cards-caption {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+  }
+
+  .bronze {
+    margin-top: 40px;
+  }
+
+  .support {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+  } 
+
+  .footer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.footer-item {
+   margin-bottom: 14px;
+   gap: 30px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .support {
+    display: grid;
+    grid-template-columns: 3fr;
+  }
+}
+/****************************************
+ End @media queries section
+*****************************************/
+
+/****************************************
+ Start Animation section
+*****************************************/
+.preloader18 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .preloader18:before, .preloader18:after {
+    content: '';
+    border: 2px solid #ad0a0a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+  }
+  
+  .preloader18:before {
+    -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1;
+    -webkit-animation: spWaveBe 0.6s infinite linear;
+            animation: spWaveBe 0.6s infinite linear;
+  }
+  
+  .preloader18:after {
+    -webkit-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+            transform: scale(0, 0);
+    opacity: 0;
+    -webkit-animation: spWaveAf 0.6s infinite linear;
+            animation: spWaveAf 0.6s infinite linear;
+  }
+  
+  @-webkit-keyframes spWaveAf {
+    from {
+      -webkit-transform: scale(0.5, 0.5);
+              transform: scale(0.5, 0.5);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+  @keyframes spWaveAf {
+    from {
+      -webkit-transform: scale(0.5, 0.5);
+              transform: scale(0.5, 0.5);
+      -webkit-transform: scale(0.5, 0.5);
+              transform: scale(0.5, 0.5);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes spWaveBe {
+    from {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+              transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+  }
+  @keyframes spWaveBe {
+    from {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+              transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+  }
+  /****************************************
+ End Animation section
+*****************************************/
